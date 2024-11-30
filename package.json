@@ -1,6 +1,6 @@
 {
   "name": "joke-generator-api",
-  "homepage": "https://Alaebelamkaddame.github",
+  "homepage": "https://Alaebelamkaddame.github.io/Joke_generator_API/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,10 +8,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "gh-pages": "^6.2.0",
     "joke-generator-api": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
